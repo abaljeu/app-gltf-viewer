@@ -15,6 +15,8 @@ const redisClient = require('./redis-client');
 
 const app = express();
 
+console.log("hello world")
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use(bodyParser.json());
